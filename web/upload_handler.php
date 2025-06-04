@@ -1,6 +1,5 @@
 <?php
-// 이 스크립트는 교육 목적으로 고의적인 취약점을 포함하고 있습니다.
-// 실제 운영 환경에서는 절대 이렇게 사용해서는 안 됩니다.
+
 
 $uploadDir = __DIR__ . '/uploads/'; // 파일을 저장할 디렉토리
 $uploadFile = $uploadDir . basename($_FILES['file']['name']); // 업로드될 파일의 전체 경로
