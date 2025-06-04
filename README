@@ -1,0 +1,11 @@
+/ (웹 루트 디렉토리)
+├── index.php           // 메인 페이지
+├── header.php          // 모든 페이지에 포함될 헤더 및 내비게이션
+├── footer.php          // 모든 페이지에 포함될 푸터
+├── services.php        // 서비스 페이지
+├── projects.php        // 프로젝트 페이지
+├── about.php           // 회사 소개 페이지
+├── contact.php         // 문의 페이지
+├── upload_page.php     // 파일 업로드 폼 및 목록 표시 페이지 (취약점 노출)
+├── upload_handler.php  // 실제 파일 업로드 처리 로직 (이전 대화의 취약한 upload.php 내용)
+└── uploads/            // 업로드된 파일이 저장될 디렉토리 (웹 서버 쓰기 권한 필요)
