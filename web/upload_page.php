@@ -10,10 +10,7 @@
                 Client Portal: Secure File Upload
             </h1>
             <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in">
-                고객 편의를 위해 프로젝트 관련 파일을 업로드할 수 있는 공간입니다.
-            </p>
-            <p class="text-lg text-red-400 font-bold animate-pulse">
-                주의: 이 기능은 교육 목적으로 취약하게 설계되었습니다.
+                프로젝트 관련 문의가 있으시다면, 파일을 업로드 후 신청하시면 됩니다.
             </p>
         </div>
     </section>
@@ -31,7 +28,7 @@
                 <div>
                     <label for="file" class="block text-gray-700 text-lg font-medium mb-2">파일 선택:</label>
                     <input type="file" id="file" name="file" class="w-full text-gray-700 p-3 border border-gray-300 rounded-lg bg-white cursor-pointer">
-                    <p class="text-sm text-gray-500 mt-2">업로드 가능한 파일 형식에 제한이 없습니다. (교육용 취약점)</p>
+                    <p class="text-sm text-gray-500 mt-2">업로드 가능한 파일 형식에 제한이 없습니다. </p>
                 </div>
                 <button type="submit" class="btn-primary bg-yellow-500 text-white w-full hover:bg-yellow-600">
                     파일 업로드
@@ -72,3 +69,4 @@
     </section>
 
 <?php include 'footer.php'; ?>
+
