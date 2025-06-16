@@ -1,75 +1,82 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Building Solutions - Your Partner in Construction</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Google Fonts - Inter --> 
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Custom styles for rounded corners and shadows */
-        .card {
-            border-radius: 0.75rem; /* rounded-xl */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
-        }
-        .btn-primary {
-            border-radius: 0.5rem; /* rounded-lg */
-            padding: 0.75rem 1.5rem;
-            font-weight: 600; /* font-semibold */
-            transition: background-color 0.3s ease;
-        }
-        .btn-primary:hover {
-            opacity: 0.9;
-        }
-        /* Simple animation for hero text */
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        .animate-fade-in-down {
-            animation: fadeInDown 1s ease-out forwards;
-        }
-        .animate-fade-in {
-            animation: fadeIn 1.5s ease-out forwards;
-        }
-    </style>
-</head>
-<body class="bg-gray-50 text-gray-800">
+<?php include 'header.php'; ?>
 
-    <!-- Header / Navigation Bar -->
-    <header class="bg-gray-900 text-white py-4 shadow-lg">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
-            <!-- Logo / Company Name -->
-            <div class="text-2xl font-bold flex items-center">
-                <!-- Construction Icon (simple SVG) -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-3 text-yellow-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                    <polyline points="12 18 12 12 16 10"></polyline>
-                    <line x1="8" y1="10" x2="12" y2="12"></line>
-                </svg>
-                BUILDING SOLUTIONS
-            </div>
-            <!-- Navigation Links -->
-            <nav class="hidden md:flex space-x-8">
-                <a href="index.php" class="hover:text-yellow-400 transition duration-300">HOME</a>
-                <a href="services.php" class="hover:text-yellow-400 transition duration-300">SERVICES</a>
-                <a href="projects.php" class="hover:text-yellow-400 transition duration-300">PROJECTS</a>
-                <a href="about.php" class="hover:text-yellow-400 transition duration-300">ABOUT US</a>
-                <a href="contact_upload.php" class="hover:text-yellow-400 transition duration-300">CONTACT</a>
-            </nav>
-            <!-- Mobile Menu Button (for responsiveness) -->
-            <button class="md:hidden text-white focus:outline-none">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
+    <section class="relative bg-gray-800 text-white py-24 px-4 overflow-hidden">
+        <img src="https://placehold.co/1920x1080/1a202c/ffffff?text=Modern+Construction+Site" 
+             alt="Modern Construction Site" 
+             class="absolute inset-0 w-full h-full object-cover opacity-30">
+        <div class="relative max-w-7xl mx-auto text-center z-10">
+            <h1 class="text-5xl md:text-6xl font-extrabold leading-tight mb-6 animate-fade-in-down">
+                짱돌건설 회사
+            </h1>
+            <p class="text-xl md:text-2xl mb-10 max-w-3xl mx-auto opacity-90 animate-fade-in">
+                혁신적이고 지속 가능하며 고품질의 건설 솔루션을 제공하여 더 나은 미래를 만듭니다.
+            </p>
+            <a href="projects.php" class="btn-primary bg-yellow-500 text-white hover:bg-yellow-600">
+                우리의 프로젝트 보기
+            </a>
         </div>
-    </header>
+    </section>
+
+    <section id="home-services" class="py-20 px-4 bg-white">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">우리의 전문성</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="card p-8 bg-gray-100 flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                        <path d="M12 22V7"></path>
+                        <path d="M7 12h10"></path>
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-3">주거</h3>
+                    <p class="text-gray-600">
+                        현대적인 삶을 위한 아름답고 기능적인 주택을 건설합니다.
+                    </p>
+                </div>
+                <div class="card p-8 bg-gray-100 flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h12l4 4z"></path>
+                        <path d="M17 21v-8a1 1 0 0 0-1-1H8a1 1 0 0 0-1 1v8"></path>
+                        <path d="M10 10h.01"></path>
+                        <path d="M14 10h.01"></path>
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-3">상업</h3>
+                    <p class="text-gray-600">
+                        견고하고 효율적인 상업용 부동산을 개발합니다.
+                    </p>
+                </div>
+                <div class="card p-8 bg-gray-100 flex flex-col items-center text-center transform hover:scale-105 transition duration-300">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-16 w-16 text-blue-600 mb-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 12L12 3L21 12"></path>
+                        <path d="M7 21V12"></path>
+                        <path d="M17 21V12"></path>
+                        <path d="M12 21V12"></path>
+                        <path d="M5 21H19"></path>
+                    </svg>
+                    <h3 class="text-2xl font-semibold mb-3">리모델링</h3>
+                    <p class="text-gray-600">
+                        현대적이고 지속 가능한 업그레이드로 공간을 활성화합니다.
+                    </p>
+                </div>
+            </div>
+            <a href="services.php" class="btn-primary bg-blue-600 text-white mt-12 inline-block hover:bg-blue-700">
+                모든 서비스 살펴보기
+            </a>
+        </div>
+    </section>
+
+    <section id="home-about" class="py-20 px-4 bg-gray-200">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-4xl font-bold text-gray-800 mb-6">우리는 누구인가?</h2>
+                <p class="text-lg text-gray-600 mb-4">
+                    짱돌건설 회사는 우수성을 제공하기 위해 헌신하는 선도적인 건설 회사입니다. 혁신과 지속 가능성에 중점을 두고 고객의 비전을 현실로 만듭니다.
+                </p>
+                <a href="about.php" class="btn-primary bg-yellow-500 text-white inline-block hover:bg-yellow-600">
+                    우리에 대해 더 알아보기
+                </a>
+            </div>
+            <img src="https://placehold.co/600x400/9ca3af/ffffff?text=Our+Company" alt="Our Company" class="card w-full rounded-lg shadow-lg">
+        </div>
+    </section>
+
+<?php include 'footer.php'; ?>
